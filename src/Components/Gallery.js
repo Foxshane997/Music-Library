@@ -1,14 +1,20 @@
 import React from "react";
-
 import GalleryItem from "./GalleryItem";
 
-function Gallery(props) {
+function Gallery(props){
 
-    return(
+    const display = props.data.map((item, index) => {
+        return (
+            <GalleryItem item={item} key={index} />
+        )
+    })
+
+    return (
         <div>
-            <GalleryItem />
+        {display}
         </div>
     )
 }
+
 
 export default Gallery
