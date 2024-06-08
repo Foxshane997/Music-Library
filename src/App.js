@@ -1,22 +1,30 @@
-import React from 'react';
-import { useEffect, useState } from 'react';
 import './App.css';
-
+import { useEffect, useState } from 'react'
 import Gallery from './Components/Gallery';
 import SearchBar from './Components/SearchBar';
 
-function App() {
+function App(){
   let [search, setSearch] = useState('')
-  let [message, setMessage] = useState('Search for music!')
+  let [message, setMessage] = useState('Search for Music!')
   let [data, setData] = useState([])
 
-  return (
-    <div className="App">
-      <SearchBar />
-      {message}
-      <Gallery />
-    </div>
-  );
+    useEffect(() => {
+        const fetchData = async () => {
+          document.title = `${search} Music`
+          const response = await fetch('https://itunes.apple.com/search?term=the%20grateful%20dead')
+          const resData = await response.json()
+          console.log(resData)
+        }
+        fetchData()
+    })
+
+    return (
+        <div>
+          <SearchBar />
+          {message}
+          <Gallery />
+        </div>
+    )
 }
 
-export default App;
+export default App

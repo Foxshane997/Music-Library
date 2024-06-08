@@ -1,10 +1,12 @@
 import React from "react";
 
-function Gallery() {
+import GalleryItem from "./GalleryItem";
+
+function Gallery(props) {
 
     return(
         <div>
-            <h1>Gallery</h1>
+            <GalleryItem />
         </div>
     )
 }
