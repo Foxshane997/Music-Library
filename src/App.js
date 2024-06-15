@@ -1,11 +1,11 @@
 import "./App.css";
-import { useEffect, useState } from "react";
+import { useEffect, useState,Fragment } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Gallery from "./Components/Gallery";
 import SearchBar from "./Components/SearchBar";
 import AlbumView from "./Components/AlbumView";
 import ArtistView from "./Components/ArtistView";
-import { Fragment } from "react";
+// import { Fragment } from "react";
 
 const App = () => {
   let [search, setSearch] = useState("");

@@ -9,6 +9,7 @@ function GalleryItem(props) {
     height: "20vh",
     border: "1px solid black",
     margin: "2px",
+    backgroundColor:"lightblue"
   };
 
   const detailStyle = {
