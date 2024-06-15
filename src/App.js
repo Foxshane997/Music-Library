@@ -22,7 +22,9 @@ const App = () => {
           const response = await fetch(API_URL + searchTerm);
           const resData = await response.json();
           if (resData.results.length > 0) {
-            setData(resData.results);
+            setTimeout(() => {
+              setData(resData.results);
+            }, 2000)
           } else {
             setMessage("Not Found");
           }
@@ -50,10 +52,11 @@ const App = () => {
             element={
               <Fragment>
                 <SearchBar handleSearch={handleSearch} />
-                {/* {message} */}
+
                 <Suspense fallback={<h1>Loading...</h1>}>
                 <Gallery data={data} />
                 </Suspense>
+
               </Fragment>
             }
           />
