@@ -5,7 +5,7 @@ import Gallery from "./Components/Gallery";
 import SearchBar from "./Components/SearchBar";
 import AlbumView from "./Components/AlbumView";
 import ArtistView from "./Components/ArtistView";
-import { createResource as fetchData } from "./helper";
+// import { createResource as fetchData } from "./helper";
 
 const App = () => {
   let [searchTerm, setSearchTerm] = useState("");
