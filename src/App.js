@@ -1,18 +1,18 @@
 import "./App.css";
-<<<<<<< HEAD
-import { useEffect, useState,Fragment } from "react";
-=======
+// <<<<<<< HEAD
+// import { useEffect, useState,Fragment } from "react";
+// =======
 import { useEffect, useState, Fragment } from "react";
->>>>>>> withContext
+// >>>>>>> withContext
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Gallery from "./Components/Gallery";
 import SearchBar from "./Components/SearchBar";
 import AlbumView from "./Components/AlbumView";
 import ArtistView from "./Components/ArtistView";
-<<<<<<< HEAD
-// import { Fragment } from "react";
-=======
->>>>>>> withContext
+// <<<<<<< HEAD
+// // import { Fragment } from "react";
+// =======
+// >>>>>>> withContext
 
 function App() {
   let [search, setSearch] = useState("");
