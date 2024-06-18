@@ -1,13 +1,20 @@
 import "./App.css";
+<<<<<<< HEAD
 import { useEffect, useState,Fragment } from "react";
+=======
+import { useEffect, useState, Fragment } from "react";
+>>>>>>> withContext
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Gallery from "./Components/Gallery";
 import SearchBar from "./Components/SearchBar";
 import AlbumView from "./Components/AlbumView";
 import ArtistView from "./Components/ArtistView";
+<<<<<<< HEAD
 // import { Fragment } from "react";
+=======
+>>>>>>> withContext
 
-const App = () => {
+function App() {
   let [search, setSearch] = useState("");
   let [message, setMessage] = useState("Search for Music!");
   let [data, setData] = useState([]);
@@ -55,6 +62,6 @@ const App = () => {
       </Router>
     </div>
   );
-};
+}
 
 export default App;
